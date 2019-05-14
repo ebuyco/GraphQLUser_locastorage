@@ -16,5 +16,5 @@ app.use('/graphql', expressGraphQl({
 // });
 
 app.listen(port, () => {
-    console.log(`Listening on my App ${port}`);
+    console.log(`Listening on my App http://localhost:1234/graphql ${port}`);
 });
