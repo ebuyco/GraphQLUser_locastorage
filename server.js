@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const expressGraphQl = require('express-graphql');
 const schema = require('./schema/schema');
 
@@ -16,4 +17,4 @@ app.use('/graphql', expressGraphQl({
 
 app.listen(port, () => {
     console.log(`Listening on my App ${port}`);
-})
+});

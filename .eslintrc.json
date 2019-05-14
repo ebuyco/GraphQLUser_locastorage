@@ -65,7 +65,6 @@
               "no-await-in-loop": 0,
               "operator-linebreak": 0,
               "no-continue": 0,
-              "no-loop-func": 0,
-
+              "no-loop-func": 0
 }
 }
