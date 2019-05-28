@@ -8,7 +8,8 @@
     "start": "node server.js",
     "json:server": "json-server --watch db.json",
     "dev": "nodemon server.js",
-    "build": "babel *.js schema -d public -w"
+    "build": "babel *.js schema -d public -w",
+    "precommit": "lint-staged"
   },
   "author": "",
   "license": "ISC",
@@ -37,6 +38,7 @@
     "express-graphql": "^0.8.0",
     "graphql": "^14.3.0",
     "json-server": "^0.14.2",
+    "lint-staged": "^8.1.7",
     "lodash": "^4.17.11",
     "node-fetch": "^2.6.0",
     "nodemon": "^1.19.0",
@@ -45,10 +47,17 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "git push --force origin master"
+      "pre-commit": "yarn precommit"
     }
   },
   "devDependencies": {
+    "graphql-tools": "^4.0.4",
     "husky": "^2.3.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }

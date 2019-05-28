@@ -1,19 +1,20 @@
-"use strict";
 
-var express = require('express');
 
-var expressGraphQL = require('express-graphql');
+const express = require('express');
 
-var cores = require('cors');
+const expressGraphQL = require('express-graphql');
 
-var schema = require('./schema/schema');
+const cors = require('cors');
 
-var app = express();
-var port = 8081;
+const schema = require('./schema/schema');
+
+const app = express();
+const port = 8081;
+app.use(cors());
 app.use('/graphql', expressGraphQL({
-  schema: schema,
+  schema,
   graphiql: true
 }));
-app.listen(port, function () {
-  console.log("This app listen to the port http://localhost:8081/graphql ".concat(port));
+app.listen(port, () => {
+  console.log('This app listen to the port http://localhost:8081/graphql '.concat(port));
 });

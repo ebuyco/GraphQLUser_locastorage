@@ -4,11 +4,13 @@ const expressGraphQl = require('express-graphql');
 const schema = require('./schema/schema');
 
 const app = express();
-const port = 1234
+const port = 1234;
+
+app.use(cors());
 
 app.use('/graphql', expressGraphQl({
-    schema,
-    graphiql: true
+  schema,
+  graphiql: true
 }));
 
 // app.listen(4000, () => {
@@ -16,5 +18,5 @@ app.use('/graphql', expressGraphQl({
 // });
 
 app.listen(port, () => {
-    console.log(`Listening on my App http://localhost:1234/graphql ${port}`);
+  console.log(`Listening on my App http://localhost:1234/graphql ${port}`);
 });

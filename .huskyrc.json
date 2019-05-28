@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "git push --force origin master"
+    "pre-commit": "eslint *.js --fix --max-warnings=0 "
   }
 }

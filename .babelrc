@@ -1,7 +1,7 @@
 {
   "plugins": [
     "import-graphql",
-    "transform-decorators-legacy"
+    ["transform-decorators-legacy", { "decoratorsBeforeExport": true  }]
   ],
   "presets": ["@babel/preset-env"]
   }
