@@ -42,5 +42,13 @@
     "nodemon": "^1.19.0",
     "react": "^16.8.6",
     "react-apollo": "^2.5.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "git push --force origin master"
+    }
+  },
+  "devDependencies": {
+    "husky": "^2.3.0"
   }
 }
