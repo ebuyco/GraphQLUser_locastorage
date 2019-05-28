@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "pre-commit": "git push --force origin master"
+  }
+}
