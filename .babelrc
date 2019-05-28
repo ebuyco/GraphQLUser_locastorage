@@ -1,3 +1,7 @@
 {
+  "plugins": [
+    "import-graphql",
+    "transform-decorators-legacy"
+  ],
   "presets": ["@babel/preset-env"]
   }
