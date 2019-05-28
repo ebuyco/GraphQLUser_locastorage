@@ -3,7 +3,7 @@
   {
     "id": "23",
     "firstName": "Bill",
-    "aged": "23",
+    "age": "23",
     "companyId":"1"
   },
   {
@@ -17,6 +17,12 @@
     "firstName": "Nick",
     "age": "42",
     "companyId": "2"
+  },
+  {
+    "id": "12",
+    "firstName": "Test",
+    "age": "15",
+    "companyId": "1"
   }
 ],
   "companies": [

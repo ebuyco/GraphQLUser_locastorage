@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "json:server": "json-server --watch db.json",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "babel *.js schema -d public -w"
   },
   "author": "",
   "license": "ISC",
